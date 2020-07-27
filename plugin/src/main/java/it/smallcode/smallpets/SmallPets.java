@@ -45,7 +45,7 @@ public class SmallPets extends JavaPlugin {
 
     private ListenerManager listenerManager;
 
-    public final String PREFIX = "§e○§6◯  SmallPets §e◆ ";
+    public final String PREFIX = "§b§lEagle§7§lCraft ";
 
     private double xpMultiplier;
 
@@ -72,7 +72,7 @@ public class SmallPets extends JavaPlugin {
 
                 useProtocolLib = true;
 
-                Bukkit.getConsoleSender().sendMessage(PREFIX + "Found ProtocolLib, now using it.");
+                Bukkit.getConsoleSender().sendMessage(PREFIX + "Znaleziono Protocollib. Używam go.");
 
             }
 
@@ -81,21 +81,21 @@ public class SmallPets extends JavaPlugin {
         if(!selectRightVersion())
             return;
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registering pets...");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Rejestracja zwierzaki...");
 
         petMapManager.registerPets();
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registered pets");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Zarejestrowano zwierzaki");
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registering crafting recipes...");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Rejestracja craftingu...");
 
         petMapManager.registerCraftingRecipe(this);
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registered crafting recipes!");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Zarejestrowano crafting!");
 
         //Registering all listeners
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registering listeners...");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Rejestracja listenerów...");
 
         listenerManager.registerListener();
 
@@ -103,7 +103,7 @@ public class SmallPets extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new QuitListener(userManager, inventoryCache), this);
         Bukkit.getPluginManager().registerEvents(new WorldSaveListener(), this);
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Registered listeners!");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Zarejetrowano listenery!");
 
         //Registering all commands
 
@@ -111,7 +111,7 @@ public class SmallPets extends JavaPlugin {
 
         //Registering bStats
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Starting metrics...");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Włączam metryczkę...");
 
         Metrics metrics = new Metrics(this, 8071);
 
@@ -139,7 +139,7 @@ public class SmallPets extends JavaPlugin {
 
         }));
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Metrics started!");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Metryczka włączona!");
 
         //Loading the users which are online
 
@@ -151,7 +151,7 @@ public class SmallPets extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new WorldSaveListener(), this);
 
-        Bukkit.getConsoleSender().sendMessage(PREFIX + "Plugin initialized");
+        Bukkit.getConsoleSender().sendMessage(PREFIX + "Plugin włączony");
 
     }
 
