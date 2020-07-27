@@ -198,12 +198,12 @@ public class Penguin extends it.smallcode.smallpets.v1_15.pets.Penguin {
 
         ItemMeta itemMeta = item.getItemMeta();
 
-        itemMeta.setDisplayName("§9Penguin");
+        itemMeta.setDisplayName("§9Pingwin");
 
         ArrayList<String> lore = new ArrayList<>();
 
         lore.add("");
-        lore.add("§6RIGHT CLICK TO UNLOCK");
+        lore.add("§7PPM aby odblokowac");
 
         itemMeta.setLore(lore);
 
