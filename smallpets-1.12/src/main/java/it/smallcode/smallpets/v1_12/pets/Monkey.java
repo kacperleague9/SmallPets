@@ -198,12 +198,12 @@ public class Monkey extends it.smallcode.smallpets.v1_15.pets.Monkey {
 
         ItemMeta itemMeta = item.getItemMeta();
 
-        itemMeta.setDisplayName("§6Monkey");
+        itemMeta.setDisplayName("§6Malpa");
 
         ArrayList<String> lore = new ArrayList<>();
 
         lore.add("");
-        lore.add("§6RIGHT CLICK TO UNLOCK");
+        lore.add("§7PPM aby odblokowac.");
 
         itemMeta.setLore(lore);
 
