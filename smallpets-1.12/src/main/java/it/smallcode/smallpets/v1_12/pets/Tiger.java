@@ -208,12 +208,12 @@ public class Tiger extends it.smallcode.smallpets.v1_15.pets.Tiger {
 
         ItemMeta itemMeta = item.getItemMeta();
 
-        itemMeta.setDisplayName("§6Tiger");
+        itemMeta.setDisplayName("§6Tygrys");
 
         ArrayList<String> lore = new ArrayList<>();
 
         lore.add("");
-        lore.add("§6RIGHT CLICK TO UNLOCK");
+        lore.add("§7PPM aby odblokowac");
 
         itemMeta.setLore(lore);
 
