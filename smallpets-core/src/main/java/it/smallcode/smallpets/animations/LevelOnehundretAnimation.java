@@ -52,11 +52,11 @@ public class LevelOnehundretAnimation {
 
                 if(pet.getOwner().getName().endsWith("s")) {
 
-                    pet.setCustomName("§8[" + colors.get(last) + "1" + colors.get(counter) + "0" + colors.get(next) + "0§8] §7" + pet.getOwner().getName() + "' " + pet.getName());
+                    pet.setCustomName("§8[" + colors.get(last) + "1" + colors.get(counter) + "0" + colors.get(next) + "0§8] §7" + pet.getOwner().getName() + pet.getName());
 
                 }else{
 
-                    pet.setCustomName("§8[" + colors.get(last) + "1" + colors.get(counter) + "0" + colors.get(next) + "0§8] §7" + pet.getOwner().getName() + "'s " + pet.getName());
+                    pet.setCustomName("§8[" + colors.get(last) + "1" + colors.get(counter) + "0" + colors.get(next) + "0§8] §7" + pet.getOwner().getName() + pet.getName());
 
                 }
 
