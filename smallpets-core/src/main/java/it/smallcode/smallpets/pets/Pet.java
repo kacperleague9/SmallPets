@@ -312,11 +312,11 @@ public abstract class Pet {
 
         if(owner.getName().endsWith("s")){
 
-            return  "§8[" + getLevelColor() + getLevel() + "§8] §7" + owner.getName() + "' " + getName();
+            return  "§8[" + getLevelColor() + getLevel() + "§8] §7" + owner.getName() + getName();
 
         }else {
 
-            return "§8[" + getLevelColor() + getLevel() + "§8] §7" + owner.getName() + "'s " + getName();
+            return "§8[" + getLevelColor() + getLevel() + "§8] §7" + owner.getName() + getName();
 
         }
 
