@@ -42,13 +42,13 @@ public class SmallPetsCMD implements CommandExecutor {
 
                 } else {
 
-                    p.sendMessage(SmallPets.getInstance().PREFIX + "Your user data couldn't be found!");
+                    p.sendMessage(SmallPets.getInstance().PREFIX + "Nie moge znalezc tego gracza!");
 
                 }
 
             } else {
 
-                s.sendMessage(SmallPets.getInstance().PREFIX + "This command is only for players");
+                s.sendMessage(SmallPets.getInstance().PREFIX + "Nie można użyć tego w konsoli");
 
             }
 
@@ -68,15 +68,15 @@ public class SmallPetsCMD implements CommandExecutor {
 
                                 SmallPets.getInstance().getUserManager().giveUserPet(args[3], Bukkit.getPlayer(args[2]).getUniqueId().toString());
 
-                                s.sendMessage(SmallPets.getInstance().PREFIX + "Gave the " + args[3] + " pet to " + args[2] + "!");
+                                s.sendMessage(SmallPets.getInstance().PREFIX + "Dodano zwierzaka " + args[3] + " graczowi " + args[2] + "!");
 
-                                Bukkit.getPlayer(args[2]).sendMessage(SmallPets.getInstance().PREFIX + "You received the " + args[3] + " pet from " + s.getName() + "!");
+                                Bukkit.getPlayer(args[2]).sendMessage(SmallPets.getInstance().PREFIX + "Otrzymano zwierzaka " + args[3] + " od " + s.getName() + "!");
 
                                 return false;
 
                             } else {
 
-                                s.sendMessage(SmallPets.getInstance().PREFIX + "The player isn't online!");
+                                s.sendMessage(SmallPets.getInstance().PREFIX + "Gracz nie jest online!");
 
                                 return false;
 
@@ -84,7 +84,7 @@ public class SmallPetsCMD implements CommandExecutor {
 
                         } else {
 
-                            s.sendMessage(SmallPets.getInstance().PREFIX + "You haven't got the permission to do that!");
+                            s.sendMessage(SmallPets.getInstance().PREFIX + "Brak permisji");
 
                             return false;
 
@@ -94,7 +94,7 @@ public class SmallPetsCMD implements CommandExecutor {
 
                 } else {
 
-                    s.sendMessage(SmallPets.getInstance().PREFIX + "You haven't got the permission to do that!");
+                    s.sendMessage(SmallPets.getInstance().PREFIX + "Brak permisji");
 
                     return false;
 
@@ -102,8 +102,8 @@ public class SmallPetsCMD implements CommandExecutor {
 
             }
 
-            s.sendMessage(SmallPets.getInstance().PREFIX + "/smallpets");
-            s.sendMessage(SmallPets.getInstance().PREFIX + "/smallpets admin givepet <user> <type>");
+            s.sendMessage(SmallPets.getInstance().PREFIX + "/zwierzaki");
+            s.sendMessage(SmallPets.getInstance().PREFIX + "/zwierzaki admin dodaj <gracz> <nazwa>");
 
         }
 
